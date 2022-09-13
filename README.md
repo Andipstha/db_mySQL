@@ -16,3 +16,5 @@ SELECT *  FROM movies WHERE year > 2001 ORDER BY year DESC;
 
 SELECT * FROM movies WHERE movie_title LIKE "Co%";  ## LIKE is use for search operator
 
+
+INSERT INTO `bookList`(`bookName`,`bookAuthor`) VALUES ("Nepali","anishu"),("English","anishu")
