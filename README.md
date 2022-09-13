@@ -1,8 +1,8 @@
 # db_mySQL
 
----
-|'##' | comment|
----
+| Operator | Description |
+| --- | --- |
+| ## | comment |
 
 SELECT movies.movie_title, movies.year, genres.genre_title FROM movies, genres
 WHERE movies.genre_id = genres.genre_id;
