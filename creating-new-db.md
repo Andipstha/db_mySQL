@@ -1,5 +1,5 @@
 
-`
+##
 SELECT * FROM user;
 
 INSERT INTO user(`fname`,`lname`,`email`,`password`,`address`)
@@ -12,4 +12,3 @@ VALUES
 ("P","Shrestha","sandip.stha@gmail.com","123123","kathmandu");
 
 SELECT * FROM user;
-`
