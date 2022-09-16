@@ -18,3 +18,13 @@ SELECT * FROM movies WHERE movie_title LIKE "Co%";  ## LIKE is use for search op
 
 
 INSERT INTO `bookList`(`bookName`,`bookAuthor`) VALUES ("Nepali","anishu"),("English","anishu")
+
+## MySql commandeLines
+
+
+
+| Operator | Description |
+| --- | --- |
+| mysql -u root -p; | show user detail |
+| use <databaseName> |Select Databases |
+| desc user; | show user detail |
