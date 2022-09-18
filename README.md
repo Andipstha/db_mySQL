@@ -43,3 +43,55 @@ CREATE TABLE Customers (
     address varchar(255),
     primary key (id)
 );
+
+
+CREATE TABLE orders (
+    id int auto_increment not null,
+    customer_id varchar(45),
+    product_id DECIMAL(5, 2),
+    foreign key(customer_id) references customers(id),
+    foreign key(product_id) references product(id),
+);
+
+
+CREATE DATABASE momo_db;
+
+USE momo_db;
+
+-- This is for creating customer table
+CREATE TABLE customers (
+    id int auto_increment not null,
+    name varchar(255),
+    address varchar(255),
+    primary key (id)
+);
+
+CREATE TABLE product (
+    productid int auto_increment not null,
+    productname varchar(45),
+    price DECIMAL(5, 2),
+    primary key (productid)
+);
+
+INSERT INTO customers(name,address) VALUES ("sandip","kathmandu"),("ramesh","kathmandu"),("limbu","lalitpur");
+
+CREATE TABLE orders (
+    id int auto_increment not null,
+    customer_id int not null,
+    product_id int not null,
+    foreign key(customer_id) references customers (id),
+    foreign key(product_id) references product (productid),
+	primary key (id)
+);
+
+
+INSERT INTO orders(`customer_id`,`product_id`) 
+VALUES (1,1);+88889898 98
+
+SELECT * FROM orders;
+
+INSERT INTO product(productname,price) VALUES ("momo","100"),("chowmin","90"),("cmomo","120");
+
+SELECT customers.name, orders.* FROM customer INNER JOIN orders ON customers.id = orders.customer_id;
+
+
