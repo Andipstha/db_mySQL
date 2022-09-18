@@ -28,3 +28,17 @@ INSERT INTO `bookList`(`bookName`,`bookAuthor`) VALUES ("Nepali","anishu"),("Eng
 | mysql -u root -p; | show user detail |
 | use <databaseName> |Select Databases |
 | desc user; | show user detail |
+
+
+## MySql Quarry
+
+CREATE DATABASE name_db;
+
+USE name_db;
+
+CREATE TABLE Customers (
+    id int auto_increment not null,
+    name varchar(255),
+    address varchar(255),
+    primary key (id)
+);
